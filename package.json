@@ -1,0 +1,29 @@
+{
+  "name": "node-mysql-plus",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "scripts": {
+    "rollup:build": "rollup -c --sourcemap"
+  },
+  "author": "ziqi",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/lodash": "^4.14.202",
+    "@types/mysql": "^2.15.25",
+    "rollup": "^4.9.4",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
