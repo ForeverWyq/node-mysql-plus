@@ -14,20 +14,22 @@ export default [
       {
         dir: outputDir,
         format: 'cjs',
-        entryFileNames: '[name].js',
+        entryFileNames: '[name].min.cjs',
+        sourcemap: true,
       },
       {
         dir: outputDir,
-        format: 'cjs',
-        entryFileNames: '[name].min.js',
-        plugins: [terser()],
+        format: 'es',
+        entryFileNames: '[name].min.mjs',
+        sourcemap: true,
       },
     ],
     plugins: [
       cleaner({ targets: [outputDir] }),
       resolve(),
       typescript(),
-      commonjs()
+      commonjs(),
+      terser({ keep_fnames: true }),
     ],
   },
 ];
