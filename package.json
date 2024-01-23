@@ -1,6 +1,6 @@
 {
   "name": "node-mysql-plus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mysql增强库，根据数据生成对应表增删改查语句",
   "type": "module",
   "types": "./lib/types/index.d.ts",
