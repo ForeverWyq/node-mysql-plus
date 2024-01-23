@@ -1,9 +1,10 @@
-import MysqlDB from './MysqlDB';
-import MysqlPlus from './MysqlPlus';
-import * as CONSTANT from './utils/CONSTANT';
-declare const _default: {
-    MysqlDB: typeof MysqlDB;
-    MysqlPlus: typeof MysqlPlus;
-    CONSTANT: typeof CONSTANT;
+import DB from './MysqlDB';
+import DBPlus from './MysqlPlus';
+export declare const MysqlDB: typeof DB;
+export declare const MysqlPlus: typeof DBPlus;
+export declare const QUERY_TYPE: {
+    includes: string;
+    last: string;
+    head: string;
+    exact: string;
 };
-export default _default;
