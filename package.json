@@ -1,6 +1,6 @@
 {
   "name": "node-mysql-plus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "mysql增强库，根据数据生成对应表增删改查语句",
   "type": "module",
   "types": "./lib/types/index.d.ts",
@@ -16,14 +16,15 @@
   },
   "author": "ziqi",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@types/mysql": "^2.15.25"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/lodash": "^4.14.202",
-    "@types/mysql": "^2.15.25",
     "lodash": "^4.17.21",
     "mysql": "^2.18.1",
     "rollup": "^4.9.4",
